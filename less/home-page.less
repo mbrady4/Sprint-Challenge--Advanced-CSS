@@ -92,7 +92,7 @@
       }
 
       .btn {
-        .cta-button(@wild-sand, @btn-bg-color);
+        .cta-button(@wild-sand, @btn-bg-color);        
         width: 30%;
 
         @media @phone {
@@ -114,6 +114,39 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+  }
+
+  .sign-up {
+    padding: 2rem;
+    text-align:center;
+    border-top: 1px solid @main-border-color;
+    font-size:1.8rem;
+    line-height: 1rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+
+    @media @phone {
+      line-height:3rem;
+    }
+    h2 {
+      padding:2rem;
+    }
+    div {
+      padding:1.5rem;
+
+      input {
+        height:3rem;
+        border-radius: 0.25rem;
+        border: 1px solid #ced4da;
+        min-width: 200px;
+      }
+
+      .btn {
+        .cta-button(@river-bend, @waterloo);
+        line-height: 1rem;
       }
     }
   }

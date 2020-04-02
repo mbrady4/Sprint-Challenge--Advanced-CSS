@@ -12,6 +12,19 @@
         padding: 2rem;
         border-radius:3px;
     }
+    
+    animation: pulse 5s infinite;
+
+    @keyframes pulse {
+        0% {
+            background-color: @text-color;
+            color: @background;
+        }
+        100% {
+            background-color: green;
+            color: black;
+        }
+    }
 
     &:hover {
         background-color: lighten(@background, 20%);

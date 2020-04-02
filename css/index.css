@@ -167,6 +167,8 @@ nav {
   background-color: #F6F6F6;
   color: #454A59;
   border-bottom: 1px solid #F1F1F1;
+  position: sticky;
+  top: 0;
 }
 nav h1 {
   font-size: 5rem;
@@ -278,12 +280,23 @@ footer {
   text-align: center;
   color: #F6F6F6;
   border-radius: 8px;
+  animation: pulse 5s infinite;
   width: 30%;
 }
 @media (max-width:500px) {
   .home .walk .walk-text .btn {
     padding: 2rem;
     border-radius: 3px;
+  }
+}
+@keyframes pulse {
+  0% {
+    background-color: #F6F6F6;
+    color: #22283A;
+  }
+  100% {
+    background-color: green;
+    color: black;
   }
 }
 .home .walk .walk-text .btn:hover {
@@ -309,4 +322,61 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .sign-up {
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #dee2e6;
+  font-size: 1.8rem;
+  line-height: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width:500px) {
+  .home .sign-up {
+    line-height: 3rem;
+  }
+}
+.home .sign-up h2 {
+  padding: 2rem;
+}
+.home .sign-up div {
+  padding: 1.5rem;
+}
+.home .sign-up div input {
+  height: 3rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  min-width: 200px;
+}
+.home .sign-up div .btn {
+  background-color: #81848E;
+  padding: 1rem 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #454A59;
+  border-radius: 8px;
+  animation: pulse 5s infinite;
+  line-height: 1rem;
+}
+@media (max-width:500px) {
+  .home .sign-up div .btn {
+    padding: 2rem;
+    border-radius: 3px;
+  }
+}
+@keyframes pulse {
+  0% {
+    background-color: #454A59;
+    color: #81848E;
+  }
+  100% {
+    background-color: green;
+    color: black;
+  }
+}
+.home .sign-up div .btn:hover {
+  background-color: #b7b8be;
+  color: #181a20;
 }
