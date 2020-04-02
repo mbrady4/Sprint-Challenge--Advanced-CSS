@@ -1,1 +1,20 @@
 // Mixins Here
+
+.cta-button (@text-color, @background) {
+    background-color: @background; 
+    padding: 1rem 1rem;
+    font-size: 1.8rem;
+    text-align:center;
+    color: @text-color;
+    border-radius: 8px;
+
+    @media @phone {
+        padding: 2rem;
+        border-radius:3px;
+    }
+
+    &:hover {
+        background-color: lighten(@background, 20%);
+        color: darken(@text-color, 20%);
+    }
+}
